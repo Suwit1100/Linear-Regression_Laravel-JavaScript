@@ -12,14 +12,13 @@
 <body>
     <div class="container text-center m-3">
         <div class="row">
-            <form class="col-7" action="{{ route('view_linear_post') }}" method="get">
+            <form class="col-12" action="{{ route('view_linear_post') }}" method="get">
                 <input type="number" class="form-control my-1" placeholder="ความชื้น" name="x"
                     id="humidityInput">
                 <input type="number" class="form-control my-1" placeholder="อุณหถูมิ" name="y"
                     id="temperatureInput">
                 <button type="submit" class="btn btn-success form-control" id="addDataBtn">บันทึก </button>
             </form>
-            <div class="col-5"></div>
             <div class="col-7">
                 <table class="table mt-3">
                     <thead>
@@ -40,7 +39,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-12">
+            <div class="col-5">
                 <div style="width: 700px; height: 700px;">
                     <canvas id="myChart"></canvas>
                 </div>
