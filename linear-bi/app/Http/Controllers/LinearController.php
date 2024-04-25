@@ -32,4 +32,10 @@ class LinearController extends Controller
     {
         return view('chart');
     }
+
+    public function reset_data()
+    {
+        DB::table('dataset')->truncate();
+        return redirect()->back();
+    }
 }
